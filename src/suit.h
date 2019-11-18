@@ -12,7 +12,7 @@ class Suit {
     const std::string name;
 
   private:
-    Suit(std::string name);
+    explicit Suit(std::string name);
 
   public:
     std::string getName() const;
