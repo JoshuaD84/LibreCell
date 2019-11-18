@@ -2,19 +2,19 @@
 #include <string>
 
 class Suit {
-   public: 
-      static const Suit CLUBS;
-      static const Suit DIAMONDS;
-      static const Suit HEARTS;
-      static const Suit SPADES;
+  public: 
+    static const Suit CLUBS;
+    static const Suit DIAMONDS;
+    static const Suit HEARTS;
+    static const Suit SPADES;
 
-   private:
-      const std::string name;
+  private:
+    const std::string name;
 
-   private:
-      Suit(std::string name);
+  private:
+    Suit(std::string name);
 
-   public:
-      std::string getName() const;
+  public:
+    std::string getName() const;
 };
 

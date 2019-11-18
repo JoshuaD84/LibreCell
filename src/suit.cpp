@@ -5,7 +5,7 @@ Suit::Suit(std::string name) : name(name) {
 }
 
 std::string Suit::getName() const { 
-   return this->name;
+  return this->name;
 }
 
 const Suit Suit::CLUBS = Suit("Clubs");

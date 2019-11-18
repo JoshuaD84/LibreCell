@@ -5,7 +5,7 @@ Rank::Rank(std::string name, int ordinal) : name(name), ordinal(ordinal) {
 }
 
 std::string Rank::getName() const { 
-   return name;
+  return name;
 }
 
 const Rank Rank::ACE = Rank("Ace", 1);
