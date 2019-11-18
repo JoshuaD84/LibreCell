@@ -1,14 +1,14 @@
-#ifndef CARD_H
-#define CARD_H
+#pragma once
+#include "suit.h"
+#include "rank.h"
 
 class Card {
    public: 
-      Card(Suit suit, Rank rank);
-      Rank getRank();
-      Suit getSuit();
+      Card(Rank rank, Suit suit);
+      Rank getRank() const;
+      Suit getSuit() const;
    private:
-      Suit suit;
-      Rank rank;
-}
+      const Rank rank;
+      const Suit suit;
+};
 
-#endif

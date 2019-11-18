@@ -3,9 +3,18 @@
 
 class Suit {
    public: 
-      std::string getName();
-      Suit(std::string name);
+      static const Suit CLUBS;
+      static const Suit DIAMONDS;
+      static const Suit HEARTS;
+      static const Suit SPADES;
+
    private:
-      std::string name;
+      const std::string name;
+
+   private:
+      Suit(std::string name);
+
+   public:
+      std::string getName() const;
 };
 
