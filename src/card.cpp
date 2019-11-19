@@ -2,6 +2,7 @@
 #include "suit.h"
 #include "rank.h"
 #include <iostream>
+#include <string>
 
 Card::Card(Rank rank, Suit suit) : rank(rank), suit(suit) {}
 
@@ -13,7 +14,6 @@ Suit Card::getSuit() const {
   return this->suit;
 }
 
-int main() {
-  Card card = Card(Rank::JACK, Suit::CLUBS);
-  std::cout << card.getSuit().getName();
+std::string Card::getName() const {
+  return rank.getName() + " of " + suit.getName();  
 }

@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
 
 class Rank {
   public: 
@@ -20,10 +21,12 @@ class Rank {
   private:
     const std::string name;
     const int ordinal;
+    static const std::vector<const Rank*> items;
 
   private:
     Rank(std::string name, int ordinal);
 
   public:
     std::string getName() const;
+    static const std::vector<const Rank*>& getItems();
 };

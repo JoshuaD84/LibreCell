@@ -8,6 +8,10 @@ std::string Rank::getName() const {
   return name;
 }
 
+const std::vector<const Rank*>& Rank::getItems() {
+ return items;
+}
+
 const Rank Rank::ACE = Rank("Ace", 1);
 const Rank Rank::TWO = Rank("Two", 2);
 const Rank Rank::THREE = Rank("Three", 3);
@@ -22,4 +26,19 @@ const Rank Rank::JACK = Rank("Jack", 11);
 const Rank Rank::QUEEN = Rank("Queen", 12);
 const Rank Rank::KING = Rank("King", 13);
 
+const std::vector<const Rank*> Rank::items = {
+   &Rank::ACE,
+   &Rank::TWO,
+   &Rank::THREE,
+   &Rank::FOUR,
+   &Rank::FIVE,
+   &Rank::SIX,
+   &Rank::SEVEN,
+   &Rank::EIGHT,
+   &Rank::NINE,
+   &Rank::TEN,
+   &Rank::JACK,
+   &Rank::QUEEN,
+   &Rank::KING
+};
 
